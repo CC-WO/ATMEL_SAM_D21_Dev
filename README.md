@@ -34,7 +34,7 @@ Installed from [here](https://microchipdeveloper.com/harmony3:mhc-overview)
 
 ## Usage
 
-Usage is here.
+Usage is [here](USAGE.md).
 
 ## Note
 
