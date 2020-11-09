@@ -47,7 +47,7 @@ Usage is [here](USAGE.md).
 
 - SAM D21/DA1 Family：[URL](https://ww1.microchip.com/downloads/en/DeviceDoc/SAM_D21_DA1_Family_DataSheet_DS40001882F.pdf)
 - SAM D21 Xplained Pro Evaluation Kit：[URL](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/ATSAMD21-XPRO)
-- SAM D21 Xplained Pro：[URL](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42220-SAMD21-Xplained-Pro_User-Guide.pdf)
+- SAM D21 Xplained Pro User Guide：[URL](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42220-SAMD21-Xplained-Pro_User-Guide.pdf)
 - MPLAB® Harmony v3 Getting Started Articles and Other Documents：[URL](https://www.microchip.com/mplab/mplab-harmony/mplab-harmony-articles-and-documentation)
 - Microchip MPLAB Harmony(GitHub)：[URL](https://github.com/Microchip-MPLAB-Harmony)
 - Harmony 3 peripheral library application examples for SAM D21/DA1 family：[URL](https://github.com/Microchip-MPLAB-Harmony/csp_apps_sam_d21_da1)
@@ -57,4 +57,4 @@ Usage is [here](USAGE.md).
 
 ## License
 
-"Atmel SAM D21 Development" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
+"ATMEL_SAM_D21_Dev" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
