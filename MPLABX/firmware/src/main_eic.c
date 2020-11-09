@@ -32,6 +32,7 @@ static void EIC_User_Handler(uintptr_t context)
     LED_Toggle();
     SYSTICK_DelayMs(1);
 }
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: Main Entry Point

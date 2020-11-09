@@ -107,7 +107,7 @@ MHC Settingsを起こった時点でコード生成したmainファイルをNo.0
 |3  |[main_timer.c](MPLABX/firmware/src/main_timer.c)       |Timer Function(on TC3)           |
 |4  |[main_rtc.c](MPLABX/firmware/src/main_rtc.c)           |Real Time Clock Function         |
 |5  |[main_eic.c](MPLABX/firmware/src/main_eic.c)           |External Interrupt Function      |
-|6  |[main_sercom3.c](MPLABX/firmware/src/main_sercom3.c)   |USART(on SERCOM3)                |
+|6  |[main_usart.c](MPLABX/firmware/src/main_usart.c)       |USART(on SERCOM3)                |
 |7  |[main_stdio.c](MPLABX/firmware/src/main_stdio.c)       |Stnadard IO Function             |
 |8  |[main_adc.c](MPLABX/firmware/src/main_adc.c)           |ADC Function                     |
 |9  |[main_dac.c](MPLABX/firmware/src/main_dac.c)           |DAC Function                     |
@@ -166,7 +166,7 @@ EICを以下のように設定する.
 
 Available Components -> Periherals -> SERCOM -> SERCOM3を選択.
 
-SERCOM3をUARTに設定し, TermianlでSerialデバッグをする.
+SERCOM3をUSARTに設定し, TermianlでSerialデバッグをする.
 
 SERCOM3を以下のように設定する.
 

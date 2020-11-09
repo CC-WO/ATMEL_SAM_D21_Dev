@@ -27,7 +27,7 @@
 #include <stdlib.h>                     // Defines EXIT_FAILURE
 #include "definitions.h"                // SYS function prototypes
 
-#define ADC_VREF                (1650)   //1650 mV (1.65V)
+#define ADC_VREF                (1650)  //1650 mV (1.65V)
 
 uint16_t adc_count;
 uint32_t input_voltage;
@@ -48,6 +48,9 @@ int main ( void )
 
     while ( true )
     {
+        /* Maintain state machines of all polled MPLAB Harmony modules. */
+        SYS_Tasks ( );
+
         /* Start ADC conversion */
         ADC_ConversionStart();
 
@@ -64,9 +67,6 @@ int main ( void )
         printf("ADC Count = 0x%x, ADC Input Voltage = %d.%03d V \r", adc_count, (int)(input_voltage/1000), (int)(input_voltage%1000));
 
         SYSTICK_DelayMs(10);
-
-        /* Maintain state machines of all polled MPLAB Harmony modules. */
-        SYS_Tasks ( );
     }
 
     /* Execution should not come here during normal operation */
