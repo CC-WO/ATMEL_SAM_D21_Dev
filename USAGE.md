@@ -38,7 +38,7 @@ MHC -> Tools -> Clock Configuration
 
 ![clock](img/clock.png)
 
-外部RTCを使用する場合は以下の設定をする.
+水晶を用いてRTCを使用する場合は以下の設定をする.
 
 ![clock_rtc1](img/clock_rtc1.png)
 
@@ -67,6 +67,8 @@ SERCOM3をUSARTとして使用する場合は以下の設定をする.
 割り込みの設定を行う.
 
 ![nvic](img/nvic.png)
+
+割り込みの優先順位を一括で管理する.
 
 ### Pin Settings
 
@@ -140,7 +142,7 @@ TC3を利用した100msのタイマーを作成し, LEDをToggleさせる.
 
 TC3を以下のように設定する.
 
-![TC3](img/TC3.png)
+![tc3](img/tc3.png)
 
 ### 4 RTC
 
@@ -170,11 +172,11 @@ SERCOM3をUSARTに設定し, TermianlでSerialデバッグをする.
 
 SERCOM3を以下のように設定する.
 
-![SERCOM3](img/SERCOM3.png)
+![sercom3](img/sercom3.png)
 
 Terminalで確認する.
 
-![SERCOM3_HelloWorld](img/SERCOM3_HelloWorld.png)
+![sercom3_HelloWorld](img/sercom3_HelloWorld.png)
 
 ### 7 SERCOM printf
 
@@ -184,7 +186,7 @@ printfのputc, getcをSERCOM3にリダイレクトするように設定する.
 
 SERCOM3とSTDIOのUARTピンをそれぞれ接続する.
 
-![STDIO](img/STDIO.png)
+![stdio](img/stdio.png)
 
 ### 8 ADC
 
@@ -208,8 +210,6 @@ Terminalで確認する.
 
 Available Components -> Periherals -> DAC -> DACを選択.
 
-PA02をDAC出力として設定する.
-
 DACの設定をする.
 
 ![dca](img/dac.png)
@@ -218,12 +218,10 @@ DACの設定をする.
 
 Available Components -> Periherals -> TC -> TC4を選択.
 
-PB08, PB09をTC_WO4, TC_WO1として設定する.
-
 TC4の設定をする.
 
 TC4を以下のように設定する.
 
-![TC4](img/TC4.png)
+![tc4](img/tc4.png)
 
 ### 11 I2C
