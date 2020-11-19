@@ -17,7 +17,14 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: 'false'}
+        attributes: {value: 'true'}
+  - type: Boolean
+    attributes: {id: STDOUT_BUFF_MODE}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: 'true'}
 - type: Attachments
   children:
   - type: DirectDependency
