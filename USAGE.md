@@ -114,7 +114,7 @@ MHC Settingsを起こった時点でコード生成したmainファイルをNo.0
 |8  |[main_adc.c](MPLABX/firmware/src/main_adc.c)           |ADC Function                     |
 |9  |[main_dac.c](MPLABX/firmware/src/main_dac.c)           |DAC Function                     |
 |10 |[main_pwm.c](MPLABX/firmware/src/main_pwm.c)           |PWM Function(on TC4)             |
-|11 |[main_iic.c](MPLABX/firmware/src/main_iic.c)           |I2C(on SERCOM4)                  |
+|11 |[main_iic.c](MPLABX/firmware/src/main_iic_LM75BD.c)    |I2C(Master on SERCOM4)           |
 
 ## Peripheral Settings
 
