@@ -114,7 +114,7 @@ MHC Settingsを起こった時点でコード生成したmainファイルをNo.0
 |8  |[main_adc.c](MPLABX/firmware/src/main_adc.c)           |ADC Function                     |
 |9  |[main_dac.c](MPLABX/firmware/src/main_dac.c)           |DAC Function                     |
 |10 |[main_pwm.c](MPLABX/firmware/src/main_pwm.c)           |PWM Function(on TC4)             |
-|11 |[main_iic.c](MPLABX/firmware/src/main_iic_LM75BD.c)    |I2C(Master on SERCOM4)           |
+|11 |[main_iic.c](MPLABX/firmware/src/main_iic_LM75BD.c)    |I2C Master LM75BD(on SERCOM4)    |
 
 ## Peripheral Settings
 
@@ -196,7 +196,7 @@ MHC -> MHC -> ADC Configurationを選択.
 
 PA10をADC入力(AIN18)として使用する.
 
-ADCの設定をする.
+ADCを以下のように設定する.
 
 ![adc1](img/adc1.png)
 
@@ -210,7 +210,7 @@ Terminalで確認する.
 
 Available Components -> Periherals -> DAC -> DACを選択.
 
-DACの設定をする.
+DACを以下のように設定する.
 
 ![dca](img/dac.png)
 
@@ -218,10 +218,30 @@ DACの設定をする.
 
 Available Components -> Periherals -> TC -> TC4を選択.
 
-TC4の設定をする.
-
 TC4を以下のように設定する.
 
 ![tc4](img/tc4.png)
 
-### 11 I2C
+### 11 I2C Master LM75BD
+
+Available Components -> Periherals -> SERCOM2を選択.
+
+SERCOM2を以下のように設定する.
+
+![iic](img/iic.png)
+
+温度センサー[LM75BD](https://www.nxp.com/docs/en/data-sheet/LM75B.pdf)から温度を取得する.
+
+回路は以下と同等である.
+
+![iic_LM75BD_circuit](img/iic_LM75BD_circuit.png)
+
+スレーブアドレスは下記のように設定可能. ソースでは, A0:1, A1:1, A2:1とする.
+
+Slave Address Table
+
+![iic_LM75BD_SlaveAddress](img/iic_LM75BD_SlaveAddress.png)
+
+また, Registerを下記に示す. 温度は, Address:0x00から始まる2byteのデータを取得する.
+
+![iic_LM75BD_RegisterList](img/iic_LM75BD_RegisterList.png)
