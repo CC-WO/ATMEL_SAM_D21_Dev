@@ -18,6 +18,10 @@ Select
 
 Tools -> Embedded -> MPLAB@ Harmony 3 Configurator
 
+Harmony 3 Configuratorが正しく読み込まれていれば, 以下のような画面が現れる.
+
+<div align="center"><img src="img/mhc3.png" width="80%" alt="mhc3"></div>
+
 ### Close MHC
 
 MHC -> Exit
@@ -109,20 +113,20 @@ MHC Settingsを起こった時点でコード生成したmainファイルをNo.0
 
 デバッグの際は, mainファイルを切り替えて使用する. 基本的には上から順に動作確認することを前提とする.
 
-|No.|Program File                                           |Description                      |
-|:--|:--                                                    |:--                              |
-|0  |[main.c](MPLABX/firmware/src/main.c)                   |default                          |
-|1  |[main_gpio.c](MPLABX/firmware/src/main_gpio.c)         |Digital Out, Digital In          |
-|2  |[main_delay.c](MPLABX/firmware/src/main_delay.c)       |Delay Function                   |
-|3  |[main_timer.c](MPLABX/firmware/src/main_timer.c)       |Timer Function(on TC3)           |
-|4  |[main_rtc.c](MPLABX/firmware/src/main_rtc.c)           |Real Time Clock Function         |
-|5  |[main_eic.c](MPLABX/firmware/src/main_eic.c)           |External Interrupt Function      |
-|6  |[main_usart.c](MPLABX/firmware/src/main_usart.c)       |USART(on SERCOM3)                |
-|7  |[main_stdio.c](MPLABX/firmware/src/main_stdio.c)       |Stnadard IO Function             |
-|8  |[main_adc.c](MPLABX/firmware/src/main_adc.c)           |ADC Function                     |
-|9  |[main_dac.c](MPLABX/firmware/src/main_dac.c)           |DAC Function                     |
-|10 |[main_pwm.c](MPLABX/firmware/src/main_pwm.c)           |PWM Function(on TC4)             |
-|11 |[main_iic_LM75BD.c](MPLABX/firmware/src/main_iic_LM75BD.c)    |I2C Master LM75BD(on SERCOM4)    |
+|No.|Program File                                                |Description                      |
+|:--|:--                                                         |:--                              |
+|0  |[main.c](MPLABX/firmware/src/main.c)                        |default                          |
+|1  |[main_gpio.c](MPLABX/firmware/src/main_gpio.c)              |Digital Out, Digital In          |
+|2  |[main_delay.c](MPLABX/firmware/src/main_delay.c)            |Delay Function                   |
+|3  |[main_timer.c](MPLABX/firmware/src/main_timer.c)            |Timer Function(on TC3)           |
+|4  |[main_rtc.c](MPLABX/firmware/src/main_rtc.c)                |Real Time Clock Function         |
+|5  |[main_eic.c](MPLABX/firmware/src/main_eic.c)                |External Interrupt Function      |
+|6  |[main_usart.c](MPLABX/firmware/src/main_usart.c)            |USART(on SERCOM3)                |
+|7  |[main_stdio.c](MPLABX/firmware/src/main_stdio.c)            |Stnadard IO Function             |
+|8  |[main_adc.c](MPLABX/firmware/src/main_adc.c)                |ADC Function                     |
+|9  |[main_dac.c](MPLABX/firmware/src/main_dac.c)                |DAC Function                     |
+|10 |[main_pwm.c](MPLABX/firmware/src/main_pwm.c)                |PWM Function(on TC4)             |
+|11 |[main_iic_LM75BD.c](MPLABX/firmware/src/main_iic_LM75BD.c)  |I2C Master LM75BD(on SERCOM2)    |
 
 ## Peripheral Settings
 
