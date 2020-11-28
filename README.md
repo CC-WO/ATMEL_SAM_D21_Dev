@@ -9,14 +9,17 @@ Atmel SAM D21 Development project
 ## Requirement
 
 - macOS Catalina Version 10.15.7
-- MPLAB X IDE 5.45
-  - XC32 v2.50
-  - SAMD21_DFP 3.3.98
-  - CMSIS 5.4.0
-- [MPLAB® Harmony Configurator v3](https://www.microchip.com/mplab/mplab-harmony) version3.6.1
-  - DFP 3.4.104
-  - CMSIS 5.7.0
-- [SAM D21 Xplained Pro Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/ATSAMD21-XPRO)
+- IDE
+  - MPLAB X IDE 5.45
+    - XC32 v2.50
+    - SAMD21_DFP 3.3.98
+    - CMSIS 5.4.0
+- Code Generator
+  - [MPLAB® Harmony Configurator v3](https://www.microchip.com/mplab/mplab-harmony) version3.6.1
+    - DFP 3.4.104
+    - CMSIS 5.7.0
+- Evaluation Board
+  - [SAM D21 Xplained Pro Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/ATSAMD21-XPRO)
 
 ## Installation
 
@@ -40,8 +43,8 @@ Usage is [here](USAGE.md).
 
 ## Author
 
-- Author: CCWO
-- E-mail: cc.ccwo.cc@gmail.com
+- Author：CCWO
+- E-mail：cc.ccwo.cc@gmail.com
 
 ## References
 
