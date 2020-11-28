@@ -1,8 +1,18 @@
 # USAGE
 
+## MPLABX
+
+### Load Project
+
+File -> Open Project
+
+Select
+
+`./MPLABX/firmware/ATMEL_SAM_D21_Dev.X`
+
 ## MPLAB® Harmony Configurator v3
 
-## Load settings
+### Load settings
 
 ### Launch MHC
 
@@ -20,13 +30,13 @@ MHC -> Generate Code
 
 ### System Settings
 
-![system](img/system.png)
+<div align="center"><img src="img/system.png" width="60%" alt="system"></div>
 
-Ports -> Use PORT PLIBをTQFP64に変更する.(Pin Tableからも変更可能.)
+Ports -> Use PORT PLIBをTQFP64に変更する.(Pin Tableからも変更可能.) パッケージの変更を行うとピンの設定が初期化されるので初めに行うことをおすすめする.
 
-Processor clockを使ってdelayを使用するう場合はSysTickの設定をする.
+Processor clockを使ってdelay(SYSTICK_DelayMs)を使用する場合はSysTickの設定をする.
 
-コード生成の設定などもSystemに集約されているので一度全体に目を通しておくことをお勧めする.
+コード生成の設定などもSystemに集約されているので一度全体に目を通しておくことをおすすめする.
 
 ### Clock Settings
 
@@ -38,19 +48,17 @@ MHC -> Tools -> Clock Configuration
 
 ![clock](img/clock.png)
 
-水晶を用いてRTCを使用する場合は以下の設定をする.
+水晶を用いてRTCを使用する場合は以下の設定をする. 外部CRYSTALを使うように設定.
 
 ![clock_rtc1](img/clock_rtc1.png)
 
-外部CRYSTALを使うように設定.
+GCLK1を外部CRYSTALを32分周したものに設定.
 
 ![clock_rtc2](img/clock_rtc2.png)
 
-GCLK1を外部CRYSTALを32分周したものに設定.
+RTCのクロックソースをGCLK1に設定.
 
 ![clock_rtc3](img/clock_rtc3.png)
-
-RTCのクロックソースをGCLK1に設定.
 
 ### DMA Settings
 
@@ -66,7 +74,7 @@ SERCOM3をUSARTとして使用する場合は以下の設定をする.
 
 割り込みの設定を行う.
 
-![nvic](img/nvic.png)
+<div align="center"><img src="img/nvic.png" width="60%" alt="nvic"></div>
 
 割り込みの優先順位を一括で管理する.
 
@@ -93,7 +101,7 @@ MHC -> MHC -> Pin Configuration
 
 設定後のピンの状態.
 
-![pin](img/pin.png)
+<div align="center"><img src="img/pin.png" width="60%" alt="pin"></div>
 
 ## Main
 
@@ -114,7 +122,7 @@ MHC Settingsを起こった時点でコード生成したmainファイルをNo.0
 |8  |[main_adc.c](MPLABX/firmware/src/main_adc.c)           |ADC Function                     |
 |9  |[main_dac.c](MPLABX/firmware/src/main_dac.c)           |DAC Function                     |
 |10 |[main_pwm.c](MPLABX/firmware/src/main_pwm.c)           |PWM Function(on TC4)             |
-|11 |[main_iic.c](MPLABX/firmware/src/main_iic_LM75BD.c)    |I2C Master LM75BD(on SERCOM4)    |
+|11 |[main_iic_LM75BD.c](MPLABX/firmware/src/main_iic_LM75BD.c)    |I2C Master LM75BD(on SERCOM4)    |
 
 ## Peripheral Settings
 
@@ -142,7 +150,7 @@ TC3を利用した100msのタイマーを作成し, LEDをToggleさせる.
 
 TC3を以下のように設定する.
 
-![tc3](img/tc3.png)
+<div align="center"><img src="img/tc3.png" width="60%" alt="tc3"></div>
 
 ### 4 RTC
 
@@ -152,7 +160,7 @@ RTCを利用した1sのタイマーを作成し, LEDをToggleさせる.
 
 RTCを以下のように設定する.
 
-![rtc](img/rtc.png)
+<div align="center"><img src="img/rtc.png" width="60%" alt="rtc"></div>
 
 ### 5 EIC
 
@@ -162,7 +170,7 @@ Available Components -> Periherals -> EIC -> EICを選択.
 
 EICを以下のように設定する.
 
-![eic](img/eic.png)
+<div align="center"><img src="img/eic.png" width="60%" alt="eic"></div>
 
 ### 6 SERCOM UART
 
@@ -172,11 +180,9 @@ SERCOM3をUSARTに設定し, TermianlでSerialデバッグをする.
 
 SERCOM3を以下のように設定する.
 
-![sercom3](img/sercom3.png)
+<div align="center"><img src="img/sercom3.png" width="60%" alt="sercom3"></div>
 
 Terminalで確認する.
-
-![sercom3_HelloWorld](img/sercom3_HelloWorld.png)
 
 ### 7 SERCOM printf
 
@@ -186,7 +192,7 @@ printfのputc, getcをSERCOM3にリダイレクトするように設定する.
 
 SERCOM3とSTDIOのUARTピンをそれぞれ接続する.
 
-![stdio](img/stdio.png)
+<div align="center"><img src="img/stdio.png" width="40%" alt="stdio"></div>
 
 ### 8 ADC
 
@@ -200,11 +206,11 @@ ADCを以下のように設定する.
 
 ![adc1](img/adc1.png)
 
-![adc2](img/adc2.png)
+<div align="center"><img src="img/adc2.png" width="60%" alt="adc2"></div>
 
 Terminalで確認する.
 
-![adc3](img/adc3.png)
+<div align="center"><img src="img/adc3.png" width="60%" alt="adc3"></div>
 
 ### 9 DAC
 
@@ -212,7 +218,7 @@ Available Components -> Periherals -> DAC -> DACを選択.
 
 DACを以下のように設定する.
 
-![dca](img/dac.png)
+<div align="center"><img src="img/dac.png" width="60%" alt="dac"></div>
 
 ### 10 PWM
 
@@ -220,7 +226,7 @@ Available Components -> Periherals -> TC -> TC4を選択.
 
 TC4を以下のように設定する.
 
-![tc4](img/tc4.png)
+<div align="center"><img src="img/tc4.png" width="60%" alt="tc4"></div>
 
 ### 11 I2C Master LM75BD
 
@@ -228,7 +234,7 @@ Available Components -> Periherals -> SERCOM2を選択.
 
 SERCOM2を以下のように設定する.
 
-![iic](img/iic.png)
+<div align="center"><img src="img/iic.png" width="60%" alt="iic"></div>
 
 温度センサー[LM75BD](https://www.nxp.com/docs/en/data-sheet/LM75B.pdf)から温度を取得する.
 
