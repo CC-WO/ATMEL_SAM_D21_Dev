@@ -45,13 +45,13 @@ Usage is [here](USAGE.md).
 
 ## References
 
-- SAM D21/DA1 Family：[URL](https://ww1.microchip.com/downloads/en/DeviceDoc/SAM_D21_DA1_Family_DataSheet_DS40001882F.pdf)
-- SAM D21 Xplained Pro Evaluation Kit：[URL](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/ATSAMD21-XPRO)
-- SAM D21 Xplained Pro User Guide：[URL](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42220-SAMD21-Xplained-Pro_User-Guide.pdf)
-- MPLAB® Harmony v3 Getting Started Articles and Other Documents：[URL](https://www.microchip.com/mplab/mplab-harmony/mplab-harmony-articles-and-documentation)
-- Microchip MPLAB Harmony(GitHub)：[URL](https://github.com/Microchip-MPLAB-Harmony)
-- Harmony 3 peripheral library application examples for SAM D21/DA1 family：[URL](https://github.com/Microchip-MPLAB-Harmony/csp_apps_sam_d21_da1)
-- Getting Started with Harmony v3 Peripheral Libraries on SAM D21 MCUs：[URL](https://microchipdeveloper.com/harmony3:samd21-getting-started-training-module)
+- DataSheet - SAM D21/DA1 Family：[URL](https://ww1.microchip.com/downloads/en/DeviceDoc/SAM_D21_DA1_Family_DataSheet_DS40001882F.pdf)
+- Kit Overview - SAM D21 Xplained Pro Evaluation Kit：[URL](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/ATSAMD21-XPRO)
+- Kit User Guide - SAM D21 Xplained Pro User Guide：[URL](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42220-SAMD21-Xplained-Pro_User-Guide.pdf)
+- MPLAB Harmony v3 Overview - MPLAB® Harmony v3 Getting Started Articles and Other Documents：[URL](https://www.microchip.com/mplab/mplab-harmony/mplab-harmony-articles-and-documentation)
+- GitHub - Microchip MPLAB Harmony：[URL](https://github.com/Microchip-MPLAB-Harmony)
+- GitHub - Harmony 3 peripheral library application examples for SAM D21/DA1 family：[URL](https://github.com/Microchip-MPLAB-Harmony/csp_apps_sam_d21_da1)
+- Developer Help - Getting Started with Harmony v3 Peripheral Libraries on SAM D21 MCUs：[URL](https://microchipdeveloper.com/harmony3:samd21-getting-started-training-module)
 - PIC32+HarmonyでI2C通信のやり方：[URL](https://ame-yuki.ddo.jp/setaria/20160520_094622/pic32harmony%E3%81%A7i2c%E9%80%9A%E4%BF%A1%E3%81%AE%E3%82%84%E3%82%8A%E6%96%B9/)
 - 参考ブログ：[URL](http://blog.livedoor.jp/mplab/archives/cat_1271531.html)
 

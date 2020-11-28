@@ -192,24 +192,23 @@
                    displayName="Important Files"
                    projectFiles="false">
       <logicalFolder name="f1" displayName="default.mhc" projectFiles="true">
-        <itemPath>../../../../ATMEL_SAM_L10_Dev/MPLABX/firmware/src/config/default/default.mhc/dac.yml</itemPath>
-        <itemPath>../../../../ATMEL_SAM_L10_Dev/MPLABX/firmware/src/config/default/default.mhc/core.yml</itemPath>
-        <itemPath>../../../../ATMEL_SAM_L10_Dev/MPLABX/firmware/src/config/default/default.mhc/cmsis.yml</itemPath>
-        <itemPath>../../../../ATMEL_SAM_L10_Dev/MPLABX/firmware/src/config/default/default.mhc/project.yml</itemPath>
-        <itemPath>../../../../ATMEL_SAM_L10_Dev/MPLABX/firmware/src/config/default/default.mhc/tc0.yml</itemPath>
-        <itemPath>../../../../ATMEL_SAM_L10_Dev/MPLABX/firmware/src/config/default/default.mhc/GraphSettings.yml</itemPath>
-        <itemPath>../../../../ATMEL_SAM_L10_Dev/MPLABX/firmware/src/config/default/default.mhc/tc1.yml</itemPath>
-        <itemPath>../../../../ATMEL_SAM_L10_Dev/MPLABX/firmware/src/config/default/default.mhc/dfp.yml</itemPath>
-        <itemPath>../../../../ATMEL_SAM_L10_Dev/MPLABX/firmware/src/config/default/default.mhc/stdio.yml</itemPath>
-        <itemPath>../../../../ATMEL_SAM_L10_Dev/MPLABX/firmware/src/config/default/default.mhc/rtc.yml</itemPath>
-        <itemPath>../../../../ATMEL_SAM_L10_Dev/MPLABX/firmware/src/config/default/default.mhc/pm.yml</itemPath>
-        <itemPath>../../../../ATMEL_SAM_L10_Dev/MPLABX/firmware/src/config/default/default.mhc/evsys.yml</itemPath>
-        <itemPath>../../../../ATMEL_SAM_L10_Dev/MPLABX/firmware/src/config/default/default.mhc/nvmctrl.yml</itemPath>
-        <itemPath>../../../../ATMEL_SAM_L10_Dev/MPLABX/firmware/src/config/default/default.mhc/adc.yml</itemPath>
-        <itemPath>../../../../ATMEL_SAM_L10_Dev/MPLABX/firmware/src/config/default/default.mhc/settings.yml</itemPath>
-        <itemPath>../../../../ATMEL_SAM_L10_Dev/MPLABX/firmware/src/config/default/default.mhc/sercom1.yml</itemPath>
-        <itemPath>../../../../ATMEL_SAM_L10_Dev/MPLABX/firmware/src/config/default/default.mhc/sercom0.yml</itemPath>
-        <itemPath>../../../../ATMEL_SAM_L10_Dev/MPLABX/firmware/src/config/default/default.mhc/eic.yml</itemPath>
+        <itemPath>../src/config/default/default.mhc/dac.yml</itemPath>
+        <itemPath>../src/config/default/default.mhc/core.yml</itemPath>
+        <itemPath>../src/config/default/default.mhc/cmsis.yml</itemPath>
+        <itemPath>../src/config/default/default.mhc/tc3.yml</itemPath>
+        <itemPath>../src/config/default/default.mhc/project.yml</itemPath>
+        <itemPath>../src/config/default/default.mhc/GraphSettings.yml</itemPath>
+        <itemPath>../src/config/default/default.mhc/tc4.yml</itemPath>
+        <itemPath>../src/config/default/default.mhc/dfp.yml</itemPath>
+        <itemPath>../src/config/default/default.mhc/stdio.yml</itemPath>
+        <itemPath>../src/config/default/default.mhc/rtc.yml</itemPath>
+        <itemPath>../src/config/default/default.mhc/evsys.yml</itemPath>
+        <itemPath>../src/config/default/default.mhc/nvmctrl.yml</itemPath>
+        <itemPath>../src/config/default/default.mhc/sercom2.yml</itemPath>
+        <itemPath>../src/config/default/default.mhc/sercom3.yml</itemPath>
+        <itemPath>../src/config/default/default.mhc/adc.yml</itemPath>
+        <itemPath>../src/config/default/default.mhc/settings.yml</itemPath>
+        <itemPath>../src/config/default/default.mhc/eic.yml</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/default/harmony-manifest-success.yml</itemPath>
@@ -451,8 +450,6 @@
         <property key="memories.programmemory.ranges" value="0-3ffff"/>
         <property key="memories.rww" value="true"/>
         <property key="poweroptions.powerenable" value="false"/>
-        <property key="programmerToGoFilePath"
-                  value="/Users/yoshihironakamura/workspace/GitHub/ATMEL_SAM_D21_Dev/MPLABX/firmware/ATMEL_SAM_D21_Dev.X/debug/default/ATMEL_SAM_D21_Dev_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"
