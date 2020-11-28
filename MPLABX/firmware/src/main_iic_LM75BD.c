@@ -55,7 +55,10 @@ int main ( void )
 
     uint16_t temp = 0;
 
+    // SYSTICK Settings
     SYSTICK_TimerStart();
+
+    // SERCOM2 Settings
     SERCOM2_I2C_CallbackRegister(i2cEventHandler, 0);
 
     while ( true )

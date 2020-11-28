@@ -202,9 +202,11 @@ MHC -> MHC -> ADC Configurationを選択.
 
 PA10をADC入力(AIN18)として使用する.
 
-ADCを以下のように設定する.
+ADC Configurationを以下のように設定する.
 
 ![adc1](img/adc1.png)
+
+ADCを以下のように設定する.
 
 <div align="center"><img src="img/adc2.png" width="60%" alt="adc2"></div>
 
@@ -224,7 +226,7 @@ DACを以下のように設定する.
 
 Available Components -> Periherals -> TC -> TC4を選択.
 
-TC4を以下のように設定する.
+TC4を以下のように設定する. PWM周波数：1kHz, 初期Duty：50%に設定.
 
 <div align="center"><img src="img/tc4.png" width="60%" alt="tc4"></div>
 
@@ -240,14 +242,14 @@ SERCOM2を以下のように設定する.
 
 回路は以下と同等である.
 
-![iic_LM75BD_circuit](img/iic_LM75BD_circuit.png)
+<div align="center"><img src="img/iic_LM75BD_circuit.png" width="60%" alt="iic_LM75BD_circuit"></div>
 
 スレーブアドレスは下記のように設定可能. ソースでは, A0:1, A1:1, A2:1とする.
 
 Slave Address Table
 
-![iic_LM75BD_SlaveAddress](img/iic_LM75BD_SlaveAddress.png)
+<div align="center"><img src="img/iic_LM75BD_SlaveAddress.png" width="60%" alt="iic_LM75BD_SlaveAddress"></div>
 
 また, Registerを下記に示す. 温度は, Address:0x00から始まる2byteのデータを取得する.
 
-![iic_LM75BD_RegisterList](img/iic_LM75BD_RegisterList.png)
+<div align="center"><img src="img/iic_LM75BD_RegisterList.png" width="60%" alt="iic_LM75BD_RegisterList"></div>

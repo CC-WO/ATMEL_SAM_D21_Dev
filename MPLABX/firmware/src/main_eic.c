@@ -43,6 +43,8 @@ int main ( void )
 {
     /* Initialize all modules */
     SYS_Initialize ( NULL );
+
+    // SYSTICK Settings
     SYSTICK_TimerStart();
 
     // EIC Settings
