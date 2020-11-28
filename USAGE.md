@@ -138,7 +138,7 @@ PA15の設定のみ変更し, コード生成を行う. 初期では状態変化
 
 |No.|Pin ID|Custom Name    |Function       |Mode    |Direction|Latch|Pull Up|Pull Down|Drive Strength|
 |:--|:--   |:--            |:--            |:--     |:--      |:--  |:--    |:--      |:--           |
-|32 |PA15  |BUTTON         |GPIO           |-       |In       |-    |-      |-        |-             |
+|32 |PA15  |BUTTON         |GPIO           |-       |In       |-    |Enable |-        |-             |
 
 他のサンプルを試す場合は元に戻す.
 
@@ -204,9 +204,7 @@ Available Components -> Periherals -> ADC -> ADCを選択.
 
 MHC -> MHC -> ADC Configurationを選択.
 
-PA10をADC入力(AIN18)として使用する.
-
-ADC Configurationを以下のように設定する.
+PA10をADC入力(AIN18)として使用する. ADC Configurationを以下のように設定する.
 
 ![adc1](img/adc1.png)
 
